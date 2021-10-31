@@ -1,8 +1,8 @@
-![Logo](https://i.ibb.co/4j62Hdx/favicon.webp)[IbnuTravel]
+![Logo](https://i.ibb.co/4j62Hdx/favicon.webp)
 
-# Ibnu Medical Center
+# IbnuTravel - Where The Journey Begins!
 
-Ibnu Medical Center is for Humanity. We care about your healthy life. Medical care means the ordinary and usual professional services rendered by a Physician or other specified Provider during a professional visit for treatment of an illness or injury.
+IbnuTravel Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.
 
 ## Authors
 
@@ -18,8 +18,8 @@ Ibnu Medical Center is for Humanity. We care about your healthy life. Medical ca
 -   Fullscreen mode
 -   Cross platform
 -   Google Authentication
--   GitHub Authentication
 -   Firebase
+-   NodeJS
 
 ## FAQ
 

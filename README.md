@@ -1,8 +1,8 @@
-![Logo](https://i.ibb.co/4j62Hdx/favicon.webp)
+![Logo](https://i.ibb.co/YTphxtK/Ibnu-Travel.png)
 
 # IbnuTravel - Where The Journey Begins!
 
-IbnuTravel Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip.
+TRAVEL MORE TO DISCOVER YOURSELF! IbnuTravel Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip. Air seed winged lights saw kind whales in sixth dont seas dron image so fish all tree meat dont there is seed winged lights saw kind whales in sixth dont seas dron image so fish all tree meat dont there
 
 ## Authors
 

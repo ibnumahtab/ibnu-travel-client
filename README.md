@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/ZVJXcnq/Ibnu-Medical-Center-Logo.png)
+![Logo](https://i.ibb.co/4j62Hdx/favicon.webp)[IbnuTravel]
 
 # Ibnu Medical Center
 

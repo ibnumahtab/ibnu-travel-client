@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { NavLink, useLocation, useHistory } from 'react-router-dom';
+import React, { useRef } from 'react';
 import useAuth from '../../../Hooks/useAuth';
-import imgd2 from '../../../images/6.jpg';
 
 const AppoinmentFrom = () => {
     const { user } = useAuth();

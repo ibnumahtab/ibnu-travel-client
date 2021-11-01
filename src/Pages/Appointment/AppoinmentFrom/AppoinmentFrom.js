@@ -119,7 +119,7 @@ const AppoinmentFrom = () => {
                                 </div>
                             </div>
                             <div className="text-center pt-4">
-                                <button className="py-2 w-full md:px-24 border text-indigo-600 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out ">
+                                <button className="py-2 w-full md:px-24 border text-indigo-600 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out">
                                     Booking Now
                                 </button>
                             </div>

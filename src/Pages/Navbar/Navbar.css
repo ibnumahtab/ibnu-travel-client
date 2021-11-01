@@ -1,0 +1,23 @@
+.profile-holder {
+    position: relative;
+}
+.proflie-item {
+    position: absolute;
+    top: 70px;
+    left: -200px;
+    z-index: 1;
+}
+.active-profile-icon-area {
+    display: none;
+}
+@media only screen and (max-width: 1240px) {
+    .proflie-item {
+        right: 0px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .proflie-item {
+        top: 50px;
+        right: -100px;
+    }
+}

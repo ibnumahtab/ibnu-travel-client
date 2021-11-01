@@ -1,0 +1,23 @@
+.res-table{
+  overflow-x:auto;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 15px;
+  }
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    border-right: 1px solid red;
+  }

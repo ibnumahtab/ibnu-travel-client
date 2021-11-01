@@ -1,0 +1,35 @@
+.services-page-banner{
+  background-image: linear-gradient(rgb(3 169 244 / 70%), #e97ca9e8), url(../../images/6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-list {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 7px;
+}
+.tabs {
+  font-weight: 600;
+  padding:2px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+.tabs:last-child {
+  border-bottom: none;
+}
+.active-tabs {
+  color:rgb(184, 34, 116);
+  font-weight: 800;
+}
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+.tab-active-content {
+    display: block;
+}

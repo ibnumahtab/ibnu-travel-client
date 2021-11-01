@@ -43,12 +43,15 @@ const MyOrders = () => {
     );
     return (
         <div className="py-24 container m-auto full-width-all">
-            <div className="grid  grid-cols-3 gap-8 mt-8">
+            <h2 className="md:text-8xl text-center text-5xl text-indigo-700 font-extrabold md:pb-10">
+                My Orders
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 mt-8">
                 {services.length ? (
                     singleUserOrders.map(order => (
-                        <div className=" bg-indigo-400 p-4 text-white rounded-xl">
+                        <div className="p-4 shadow border rounded-xl">
                             <div className="flex justify-between border-b px-2 my-4">
-                                <h1>id :</h1>
+                                <h1>ID :</h1>
                                 <h1 className="mb-3">{order._id}</h1>
                             </div>
                             <div className="flex justify-between border-b px-2 my-4">
@@ -56,11 +59,11 @@ const MyOrders = () => {
                                 <h1 className="mb-3">{order.packName}</h1>
                             </div>
                             <div className="flex justify-between border-b px-2 my-4">
-                                <h1>customer Name :</h1>
+                                <h1>Traveler's Name :</h1>
                                 <h1 className="mb-3">{user.displayName}</h1>
                             </div>
                             <div className="flex justify-between border-b px-2 my-4">
-                                <h1>customer email :</h1>
+                                <h1>Traveler's Email :</h1>
                                 <h1 className="mb-3">{user.email}</h1>
                             </div>
                             <div className="flex justify-between border-b px-2 my-4">
@@ -69,11 +72,11 @@ const MyOrders = () => {
                                     <h1
                                         className={
                                             order.status
-                                                ? 'text-white bg-pink-500 py-2 px-4 rounded-lg'
-                                                : 'text-white bg-red-500 py-2 px-4 rounded-lg'
+                                                ? 'text-white bg-green-500 py-2 px-4'
+                                                : 'text-white bg-red-500 py-2 px-4'
                                         }
                                     >
-                                        {order.status ? 'Approved' : 'Pending'}
+                                        {order.status ? 'Accepted' : 'Pending'}
                                     </h1>
                                 </div>
                             </div>
@@ -82,13 +85,13 @@ const MyOrders = () => {
                                     className={
                                         order.status
                                             ? 'hidden'
-                                            : ' bg-red-600 text-white hover:bg-red-700 w-full py-2 text-center rounded-lg'
+                                            : ' bg-red-600 text-white hover:bg-red-700 w-full py-2 text-center'
                                     }
                                 >
                                     <button
                                         onClick={() => handelCancel(order._id)}
                                     >
-                                        Delete
+                                        Cancel
                                     </button>
                                 </div>
                             </div>

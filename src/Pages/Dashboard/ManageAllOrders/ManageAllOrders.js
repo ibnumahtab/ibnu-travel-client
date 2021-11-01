@@ -42,7 +42,7 @@ const ManageAllOrders = () => {
         }
     };
     const handelCancel = id => {
-        const proceed = window.confirm('Are you sure, You want to delete it?');
+        const proceed = window.confirm('Sure to Delete?');
         if (proceed) {
             const url = `https://ibnu-travel.herokuapp.com/orders/${id}`;
             fetch(url, {
@@ -62,14 +62,17 @@ const ManageAllOrders = () => {
     };
     return (
         <div className="py-24 container m-auto full-width-all">
+            <h2 className="md:text-8xl text-center text-5xl text-indigo-700 font-extrabold md:pb-10">
+                All Orders
+            </h2>
             <div>
                 {services.length ? (
-                    <div className="grid  grid-cols-3 gap-8 mt-8">
+                    <div className="grid md:grid-cols-3 gap-8 mt-8">
                         {orders.map(order => (
                             <div className="res-table">
-                                <div className=" bg-indigo-400 p-4 text-white rounded-xl">
+                                <div className="shadow border px-3 rounded-xl">
                                     <div className="flex justify-between border-b px-2 my-4">
-                                        <h1>id :</h1>
+                                        <h1>ID :</h1>
                                         <h1 className="mb-3">{order._id}</h1>
                                     </div>
                                     <div className="flex justify-between border-b px-2 my-4">
@@ -79,13 +82,13 @@ const ManageAllOrders = () => {
                                         </h1>
                                     </div>
                                     <div className="flex justify-between border-b px-2 my-4">
-                                        <h1>customer Name :</h1>
+                                        <h1>Traveler's Name :</h1>
                                         <h1 className="mb-3">
                                             {user.displayName}
                                         </h1>
                                     </div>
                                     <div className="flex justify-between border-b px-2 my-4">
-                                        <h1>customer email :</h1>
+                                        <h1>Traveler's email :</h1>
                                         <h1 className="mb-3">{user.email}</h1>
                                     </div>
                                     <div className="flex justify-between border-b px-2 my-4">
@@ -94,12 +97,12 @@ const ManageAllOrders = () => {
                                             <h1
                                                 className={
                                                     order.status
-                                                        ? 'text-white bg-pink-500 py-2 px-4 rounded-lg'
-                                                        : 'text-white bg-red-500 py-2 px-4 rounded-lg'
+                                                        ? 'text-white bg-green-500 py-2 px-4'
+                                                        : 'text-white bg-red-500 py-2 px-4'
                                                 }
                                             >
                                                 {order.status
-                                                    ? 'Approved'
+                                                    ? 'Accepted'
                                                     : 'Pending'}
                                             </h1>
                                         </div>
@@ -107,7 +110,7 @@ const ManageAllOrders = () => {
                                     <div className="flex justify-between px-2 pb-4">
                                         <div>
                                             {!order.status ? (
-                                                <div className="bg-green-600 text-white hover:bg-green-700 py-2 px-4 rounded-lg">
+                                                <div className="bg-green-600 text-white hover:bg-green-700 py-2 px-4">
                                                     <button
                                                         onClick={() =>
                                                             handelAccept(
@@ -125,8 +128,8 @@ const ManageAllOrders = () => {
                                         <div
                                             className={
                                                 !order.status
-                                                    ? 'bg-red-600 text-white hover:bg-red-700 py-2 px-4 rounded-lg text-center'
-                                                    : 'bg-red-600 text-white hover:bg-red-700 py-2 px-4 rounded-lg w-full text-center'
+                                                    ? 'bg-red-600 text-white hover:bg-red-700 py-2 px-4 text-center'
+                                                    : 'bg-red-600 text-white hover:bg-red-700 py-2 px-4 w-full text-center'
                                             }
                                         >
                                             <button
@@ -134,7 +137,7 @@ const ManageAllOrders = () => {
                                                     handelCancel(order._id)
                                                 }
                                             >
-                                                Delete
+                                                Cancel
                                             </button>
                                         </div>
                                     </div>

@@ -22,7 +22,7 @@ const Banner = () => {
                             Wherever you go, go with all your heart.
                         </h1>
                         <br />
-                        <h4 className="text-xl my-10">
+                        <h4 className="text-xl mb-10">
                             Traveling, you realize that differences are lost:
                             each city takes to resembling all cities, places
                             exchange their form, order, distances, a shapeless
@@ -34,11 +34,11 @@ const Banner = () => {
                             can be one way or round trip.
                         </h4>
                         <NavLink
-                            className="rounded-full py-3 px-5 border-2 text-white text-lg font-semibold  hover:bg-indigo-700 hover:border-indigo-700 hover:text-white transition duration-500 ease-in-out "
+                            className="py-3 px-24 rounded-tr-xl rounded-bl-xl border-2 text-white text-lg font-semibold  hover:bg-indigo-700 hover:border-indigo-700 hover:text-white transition duration-500 ease-in-out "
                             to="/services"
                         >
                             {' '}
-                            Explore Destination
+                            Take Offers
                         </NavLink>
                     </div>
                     <div className="col-span-6"></div>

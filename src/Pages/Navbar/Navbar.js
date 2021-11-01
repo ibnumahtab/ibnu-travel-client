@@ -1,5 +1,3 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router';
@@ -10,10 +8,8 @@ import './Navbar.css';
 // navbar area for all
 
 const Navbar = ({ fixed }) => {
-    const { user, logOut, handelLogout } = useAuth();
+    const { user } = useAuth();
     const [menuOpen, setMenuOpen] = React.useState(false);
-    const barsIcon = <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>;
-    const [profileState, setProfileState] = useState('Off');
 
     // function for user img
     let loginPhoto = () => {
@@ -57,7 +53,7 @@ const Navbar = ({ fixed }) => {
                                     </button>
                                 </div>
                                 <div className="text-white text-center hidden md:block">
-                                    <small>{user?.displayName}</small>
+                                    <small>Welcome - {user?.displayName}</small>
                                 </div>
                                 <div
                                     className={
@@ -81,7 +77,7 @@ const Navbar = ({ fixed }) => {
                                                 to="/aboutUs"
                                             >
                                                 {' '}
-                                                About Us{' '}
+                                                About{' '}
                                             </NavLink>
                                         </div>
                                         <div className="nav-item px-1">
@@ -89,7 +85,7 @@ const Navbar = ({ fixed }) => {
                                                 className="flex items-center uppercase font-bold leading-snug text-white px-3 py-4 border-transparent hover:border-white cursor-pointer border-b-2 mx-1 text-base"
                                                 to="/services"
                                             >
-                                                Serivces
+                                                Offers
                                             </NavLink>
                                         </div>
                                         <div className="nav-item px-1">
@@ -97,7 +93,7 @@ const Navbar = ({ fixed }) => {
                                                 className="flex items-center uppercase font-bold leading-snug text-white px-3 py-4 border-transparent hover:border-white cursor-pointer border-b-2 mx-1 text-base"
                                                 to="/appointment"
                                             >
-                                                Book-A-Trip
+                                                Booking
                                             </NavLink>
                                         </div>
                                         <div className="nav-item px-1">
@@ -106,7 +102,7 @@ const Navbar = ({ fixed }) => {
                                                 to="/contactUs"
                                             >
                                                 {' '}
-                                                Contact Us{' '}
+                                                Contact{' '}
                                             </NavLink>
                                         </div>
                                         {/* user img login log-out */}

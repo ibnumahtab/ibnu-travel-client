@@ -9,7 +9,7 @@ const ServicesHome = () => {
     const highNumber = services.length - 6;
     let numStart = Math.floor(Math.random() * highNumber) + 1;
     return (
-        <div className="py-24 our-doctors-container">
+        <div className="py-24 our-doctors-container mb-10">
             <div className="container m-auto full-width-all ">
                 <div>
                     {services.length ? (
@@ -31,13 +31,13 @@ const ServicesHome = () => {
                         </div>
                     )}
                 </div>
-                <div className="mt-16 text-center ">
+                <div className="mt-16 text-center py-10">
                     <NavLink
-                        className="rounded-full py-3 px-6 border text-indigo-500 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out "
+                        className="py-3 px-24 border text-indigo-500 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out "
                         to="/services"
                     >
                         {' '}
-                        Find more Packages
+                        All Offers
                     </NavLink>
                 </div>
             </div>

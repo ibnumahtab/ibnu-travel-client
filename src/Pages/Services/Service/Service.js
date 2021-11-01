@@ -26,11 +26,11 @@ const Service = props => {
                         </span>
                     </div>
                 </div>
-                <div className="flex justify-between text-center my-3">
-                    <div className="border p-2 w-1/3 bg-red-400 line-through rounded-tl-xl rounded-br-xl">
+                <div className="md:flex justify-between text-center my-3">
+                    <div className="border p-2 my-2 md:my-0 md:w-1/3 bg-red-400 line-through rounded-tl-xl rounded-br-xl">
                         <p>Price ${prevPrice}</p>
                     </div>
-                    <div className="border p-2 w-3/5 bg-green-400 rounded-tr-xl rounded-bl-xl">
+                    <div className="border p-2 w-full md:w-3/5 bg-green-400 rounded-tr-xl rounded-bl-xl">
                         <p>Offer Price ${offerPrice}</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const Service = props => {
                         to={`services/${_id}`}
                     >
                         {' '}
-                        Details
+                        Book Now
                     </NavLink>
                 </div>
             </div>

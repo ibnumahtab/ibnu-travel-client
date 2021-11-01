@@ -9,11 +9,25 @@ const ServicesHome = () => {
     const highNumber = services.length - 6;
     let numStart = Math.floor(Math.random() * highNumber) + 1;
     return (
-        <div className="py-24 our-doctors-container mb-10">
+        <div className="md:py-24 our-doctors-container">
+            <div className="container text-center pb-10">
+                <img
+                    className="mx-auto text-center"
+                    src="https://i.ibb.co/4j62Hdx/favicon.webp"
+                    alt=""
+                />
+                <h2 className="text-4xl font-bold text-indigo-600">
+                    Our Offers
+                </h2>
+                <p className="text-lg leading-6 py-4">
+                    All available Offers Package you can review from here. Click
+                    on Book now Button and know details of each.
+                </p>
+            </div>
             <div className="container m-auto full-width-all ">
                 <div>
                     {services.length ? (
-                        <div className="grid grid-col-12 md:grid-cols-2 lg:grid-cols-3 gap-8 px-2 xl:px-0">
+                        <div className="grid grid-col-12 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-2 px-5 xl:px-0">
                             {services
                                 .slice(numStart, numStart + 6)
                                 .map(service => (

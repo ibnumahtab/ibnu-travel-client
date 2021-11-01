@@ -10,7 +10,7 @@ const Emergency = () => {
     };
     return (
         <div>
-            <div className="grid md:grid-cols-2 grid-cols-1 container mx-auto md:px-10 py-24">
+            <div className="grid md:grid-cols-2 grid-cols-1 container mx-auto md:px-10 md:pt-24 py-5">
                 <div>
                     <img
                         src="https://i.ibb.co/9v1r0Tt/about-image.webp"

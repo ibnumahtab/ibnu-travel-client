@@ -52,10 +52,12 @@ const AddServices = () => {
         e.preventDefault();
     };
     return (
-        <div className="bg-blue-100 py-24">
-            <div className="m-auto container full-width-all m-auto">
-                <h2 className="text-center text-3xl">Please add service !</h2>
-                <div className="m-auto w-8/12">
+        <div className="bg-blue-100 py-24 px-5">
+            <div className="mx-auto container full-width-all">
+                <h2 className="md:text-8xl text-5xl text-indigo-700 font-extrabold md:pb-10 text-center">
+                    Add A New Service
+                </h2>
+                <div className="m-auto md:w-6/12 py-3 border shadow px-10 bg-gray-100">
                     <form
                         onSubmit={handelRegister}
                         className="register-form mt-6"
@@ -63,73 +65,65 @@ const AddServices = () => {
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md "
                                 type="text"
                                 ref={getPackName}
-                                placeholder="Package Name"
+                                placeholder="Package / Offer Name"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                             />
                         </div>
-                        <br />
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md "
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                                 type="text"
                                 ref={getTagLine}
                                 placeholder="Tag line"
                             />
                         </div>
-                        <br />
-
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                                 type="number"
                                 ref={getPrevPrice}
                                 placeholder="Previous Price"
                             />
                         </div>
-                        <br />
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                                 type="text"
                                 ref={getImg}
                                 placeholder="Image URL"
                             />
                         </div>
-                        <br />
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                                 type="number"
                                 step="0.01"
                                 ref={getOfferPrice}
                                 placeholder="Offer Price"
                             />
                         </div>
-                        <br />
                         <div>
                             <input
                                 required
-                                className="py-2 px-4 w-full text-lg  rounded-md"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500"
                                 type="number"
                                 step="0.01"
                                 ref={getDay}
                                 placeholder="Day"
                             />
                         </div>
-                        <br />
                         <div>
                             <label> Description </label>
                             <textarea
                                 required
-                                className="py-2 px-4 w-full text-lg  text-black rounded-md placeholder-gray-800"
+                                className="bg-transparent p-2 w-full my-2 border-b-2 focus:outline-none border-indigo-500 border"
                                 cols="30"
-                                placeholder="Description"
                                 rows="5"
                                 ref={getDesc}
                             >
@@ -140,7 +134,7 @@ const AddServices = () => {
 
                         <div>
                             <input
-                                className="py-2 px-4 text-lg text-white rounded-md bg-pink-600 cursor-pointer hover:bg-pink-700"
+                                className="py-3 mb-2 w-full cursor-pointer border hover:text-indigo-500 text-lg font-semibold hover:border-indigo-500 hover:bg-transparent bg-indigo-500 text-white transition duration-500 ease-in-out"
                                 type="submit"
                                 value="Add Service"
                             />

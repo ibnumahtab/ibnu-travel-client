@@ -10,7 +10,7 @@ const Banner = () => {
             <div className="container m-auto px-2 py-12 md:py-20 lg:py-40 full-width-all">
                 <div className="slider h-4/5 grid grid-cols-12">
                     <div className="col-span-12 md:col-span-8 text-white border p-10 rounded-tr-3xl rounded-bl-3xl">
-                        <h1 className="text-4xl font-extrabold">
+                        <h1 className="md:text-4xl text-xl font-extrabold">
                             {' '}
                             <span className="text-indigo-500">
                                 IbnuTravel{' '}
@@ -18,7 +18,7 @@ const Banner = () => {
                             Where The Journey Begins!
                         </h1>
                         <br />
-                        <h1 className="text-6xl">
+                        <h1 className="md:text-6xl text-3xl">
                             Wherever you go, go with all your heart.
                         </h1>
                         <br />
@@ -34,7 +34,7 @@ const Banner = () => {
                             can be one way or round trip.
                         </h4>
                         <NavLink
-                            className="py-3 px-24 rounded-tr-xl rounded-bl-xl border-2 text-white text-lg font-semibold  hover:bg-indigo-700 hover:border-indigo-700 hover:text-white transition duration-500 ease-in-out "
+                            className="md:py-3 md:px-24 px-8 py-3 rounded-tr-xl rounded-bl-xl border-2 text-white text-lg font-semibold  hover:bg-indigo-700 hover:border-indigo-700 hover:text-white transition duration-500 ease-in-out "
                             to="/services"
                         >
                             {' '}

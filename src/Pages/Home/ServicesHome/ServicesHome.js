@@ -47,7 +47,7 @@ const ServicesHome = () => {
                 </div>
                 <div className="mt-16 text-center py-10">
                     <NavLink
-                        className="py-3 px-24 border text-indigo-500 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out "
+                        className="py-3 px-24 border text-indigo-500 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out"
                         to="/services"
                     >
                         {' '}

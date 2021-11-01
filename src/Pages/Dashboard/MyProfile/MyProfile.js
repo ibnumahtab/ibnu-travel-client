@@ -23,7 +23,7 @@ const MyProfile = () => {
                             <h2 className="text-center text-indigo-600 font-semibold text-2xl my-4">
                                 {user.displayName}
                             </h2>
-                            <h2 className="text-center my-4">{user.email}</h2>
+                            <h2 className="text-center my-4">{user?.email}</h2>
                             <div className="text-center">
                                 <button className="py-3 mb-2 w-2/3 border text-indigo-500 text-lg font-semibold border-indigo-500 hover:bg-indigo-500 hover:text-white transition duration-500 ease-in-out">
                                     <Link to="addServices">Add Service</Link>

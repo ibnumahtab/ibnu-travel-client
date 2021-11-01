@@ -38,7 +38,8 @@ const MyOrders = () => {
         }
     };
     const singleUserOrders = orders.filter(
-        singleUserOrder => singleUserOrder.email === user?.email
+        singleUserOrder =>
+            singleUserOrder.email === user?.email || user?.displayName
     );
     return (
         <div className="py-24 container m-auto full-width-all">

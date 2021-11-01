@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import './ServiceDetails.css';
 
 const ServiceDetails = () => {
@@ -48,9 +48,11 @@ const ServiceDetails = () => {
                                 </p>
 
                                 <div className="my-10">
-                                    <button className="py-3 mb-2 w-full md:w-2/3 border hover:text-indigo-500 text-lg font-semibold hover:border-indigo-500 hover:bg-transparent bg-indigo-500 text-white transition duration-500 ease-in-out">
-                                        Book Now
-                                    </button>
+                                    <NavLink to="/appointment">
+                                        <button className="py-3 mb-2 w-full md:w-2/3 border hover:text-indigo-500 text-lg font-semibold hover:border-indigo-500 hover:bg-transparent bg-indigo-500 text-white transition duration-500 ease-in-out">
+                                            Book Now
+                                        </button>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

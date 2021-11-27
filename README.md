@@ -20,6 +20,24 @@ TRAVEL MORE TO DISCOVER YOURSELF! IbnuTravel Travel is the movement of people be
 -   Google Authentication
 -   Firebase
 -   NodeJS
+-   Dashboard for User 
+-   Booking
+-   Manage Order
+-   Add or Remove Services
+-   Order Pending Status
+-   Update Services etc.
+
+##  Tools
+-   ReactJS
+-   NodeJS
+-   ExpressJS
+-   MongoDB
+-   Firebase etc.
+
+##  Extras 
+-   Responsive 
+-   Image and Code Optimized
+-   
 
 ## FAQ
 

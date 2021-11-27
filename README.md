@@ -36,8 +36,7 @@ TRAVEL MORE TO DISCOVER YOURSELF! IbnuTravel Travel is the movement of people be
 
 ##  Extras 
 -   Responsive 
--   Image and Code Optimized
--   
+-   Image and Code Optimized 
 
 ## FAQ
 
